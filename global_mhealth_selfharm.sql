@@ -7,10 +7,12 @@ where (Entity like 'Estonia' or Entity like 'Latvia' or Entity  like 'Lithuania'
 select * from global_self_harm_deaths_data gshdd
 where (Entity like 'Estonia' or Entity like 'Latvia' or Entity  like 'Lithuania') and `Year` >= 1990;
 
--- Overwriting SQL group by mode to allow us to group our queries selectively and create new tables
+-- Overwriting SQL group by mode to allow us to group our queries selectively
 SET @@sql_mode=REPLACE(@@sql_mode, 'ONLY_FULL_GROUP_BY', '');
 
 
+--  Create new table for each individual country and join data from Global Mental Health 
+--  and Global Self Harm Deaths Data sheets
 create table estonia_mhd_sfhd select  
 gmhd.Entity , gmhd.`Year` , gmhd .`Schizophrenia (%)` , gmhd.`Bipolar disorder (%)` ,
 gmhd.`Eating disorders (%)` , gmhd.`Anxiety disorders (%)` , gmhd .`Drug use disorders (%)` ,
@@ -44,6 +46,7 @@ where gmhd.`Year` >= 1990 and (gmhd.Entity like  'Lithuania')
 group  by gmhd .Entity , gmhd .`Year` ;
 
 
+-- Create a table for all three countries combined
 create table baltics_mhd_sfhd select  
 gmhd.Entity , gmhd.`Year` , gmhd .`Schizophrenia (%)` , gmhd.`Bipolar disorder (%)` ,
 gmhd.`Eating disorders (%)` , gmhd.`Anxiety disorders (%)` , gmhd .`Drug use disorders (%)` ,
