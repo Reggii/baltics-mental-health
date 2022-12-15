@@ -30,6 +30,7 @@ Meanwhile, the rate of anxiety-related disorders has remained steady at around 3
 
 Quite like Latvia, Estonia has had a major decrease in self-harm related deaths since their peak of 5.03% in 1995 to their lowest rate of 2.22% in 2017. And while drug related disorders have climbed from 3.01% to 3.93%, alcohol related disorders have slightly dipped to around the 3.30% mark from their high of 3.60% in 2000. Depression has also decreased from 3.80% in 1990 to 3.22% in 2017, while anxiety disorders have remained stagnant at around 3.57%.
 
+## Lithuania 
 ![Lithuanian data](https://user-images.githubusercontent.com/30141857/207955023-eb7cace1-62df-4086-84f7-e436a2290d8c.png)
 
 Lithuania tells a similair to story to its Baltic neighbours with the decrease of self-harm, albeit from a lower peak of 4.41% in 2000 to the lowest rate of 2.44% in 2017. Alcohol use disorders have however seen a bigger decrease from 3.86% in 1990 to 3.36% in 2017 and a sharp increase in druge use disorders can be observed from 3.42% in 2000 to 3.94% in 2017.
